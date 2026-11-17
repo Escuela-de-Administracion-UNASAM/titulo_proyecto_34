@@ -3,83 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tituladora - Alex Rodriguez N°34</title>
+<title>Cevicherías en Huaraz - Alex Rodriguez N°34</title>
 <style>
 *{box-sizing:border-box;font-family:Arial,sans-serif}
 body{margin:0;background:#0f172a;color:#fff;min-height:100vh;padding:20px}
 .card{max-width:750px;margin:auto;background:#1e293b;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
 h1{margin:0 0 5px;font-size:28px;color:#38bdf8}
-p.sub{color:#cbd5e1;margin:0 0 20px}
-label{display:block;margin:14px 0 6px;font-weight:bold;color:#e2e8f0}
-input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:15px;outline:none}
-input:focus{border-color:#38bdf8}
-button{width:100%;margin-top:20px;padding:15px;border:none;border-radius:12px;background:#38bdf8;color:#0f172a;font-weight:900;font-size:17px;cursor:pointer}
-button:hover{background:#7dd3fc}
-.result{margin-top:22px;background:#0f172a;border:1px solid #334155;border-radius:14px;padding:20px;display:none}
-.result h2{color:#38bdf8;margin:0 0 10px;font-size:20px}
-.result p{background:#1e293b;padding:12px;border-radius:10px;line-height:1.5}
-.badge{display:inline-block;background:#38bdf8;color:#0f172a;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:900;margin-bottom:10px}
-footer{text-align:center;color:#94a3b8;font-size:13px;margin-top:18px}
+.sub{color:#cbd5e1;margin:0 0 20px}
+h2{color:#38bdf8;margin-top:22px}
+p,li{color:#e2e8f0;line-height:1.6}
+.badge{display:inline-block;background:#38bdf8;color:#0f172a;padding:6px 12px;border-radius:20px;font-weight:bold;font-size:13px}
+.footer{margin-top:22px;background:#0f172a;border:1px solid #334155;border-radius:14px;padding:16px;text-align:center}
 </style>
 </head>
 <body>
 <div class="card">
-<h1>🎓 TITULADORA</h1>
-<p class="sub">Generador de Título de Investigación - Administración | Alex Rodriguez - N° 34</p>
-<span class="badge">CORRELACIONAL - BIVARIADO</span>
+<span class="badge">Escuela de Administración - UNASAM</span>
+<h1>Cevicherías en Huaraz</h1>
+<p class="sub">Proyecto N°34 - Alex Rodriguez | Huaraz, Áncash</p>
 
-<label>Variable 1 (ej: Gestión administrativa)</label>
-<input id="v1" value="Gestión administrativa" placeholder="Escribe variable 1">
+<h2>🎯 Título del Proyecto</h2>
+<p><b>La calidad del servicio y la satisfacción del cliente en las cevicherías de Huaraz, 2026</b></p>
 
-<label>Variable 2 (ej: Calidad de servicio)</label>
-<input id="v2" value="Calidad de servicio" placeholder="Escribe variable 2">
+<h2>❓ Problema</h2>
+<p>¿Cómo influye la calidad del servicio en la satisfacción del cliente en las cevicherías de Huaraz?</p>
 
-<label>¿Dónde lo vas a estudiar? (Empresa / Institución / Lugar)</label>
-<input id="lugar" value="Municipalidad Distrital de Trujillo" placeholder="Ej: Empresa Gloria, Trujillo">
+<h2>✅ Objetivo General</h2>
+<p>Determinar la influencia de la calidad del servicio en la satisfacción del cliente en las cevicherías de Huaraz.</p>
 
-<label>Año</label>
-<input id="anio" value="2026">
+<h2>📋 Objetivos Específicos</h2>
+<ul>
+<li>Identificar el nivel de calidad del servicio en las cevicherías de Huaraz.</li>
+<li>Identificar el nivel de satisfacción del cliente en las cevicherías de Huaraz.</li>
+<li>Analizar la relación entre la atención, la higiene y la satisfacción del cliente.</li>
+</ul>
 
-<label>Tipo de estudio</label>
-<select id="tipo">
-<option>Correlacional</option>
-<option>Descriptivo - Correlacional</option>
-<option>Explicativo</option>
-</select>
+<h2>📊 Variables</h2>
+<ul>
+<li><b>Variable 1:</b> Calidad del servicio</li>
+<li><b>Variable 2:</b> Satisfacción del cliente</li>
+</ul>
 
-<button onclick="generar()">✨ GENERAR MI TÍTULO</button>
-
-<div class="result" id="res">
-<h2>✅ Tu Título Generado:</h2>
-<p id="titulo"></p>
-<h2>🎯 Objetivo General:</h2>
-<p id="objetivo"></p>
-<h2>💡 Hipótesis General:</h2>
-<p id="hipo"></p>
-<h2>📝 Variables:</h2>
-<p id="vars"></p>
+<div class="footer">
+<b>Alex Rodriguez - N°34</b><br>
+Fundamentos de Investigación - Escuela de Administración UNASAM
 </div>
-<footer>Proyecto: titulo_proyecto_AlexRodriguez_34 | UNASAM - Administración</footer>
 </div>
-
-<script>
-function generar(){
-let v1=document.getElementById('v1').value.trim();
-let v2=document.getElementById('v2').value.trim();
-let lugar=document.getElementById('lugar').value.trim();
-let anio=document.getElementById('anio').value.trim();
-let tipo=document.getElementById('tipo').value;
-if(!v1||!v2||!lugar){alert('Completa las 3 casillas');return;}
-let titulo = v1.charAt(0).toUpperCase()+v1.slice(1) + ' y ' + v2.toLowerCase() + ' en ' + lugar + ', ' + anio;
-let objetivo = 'Determinar la relación entre ' + v1.toLowerCase() + ' y ' + v2.toLowerCase() + ' en ' + lugar + ', ' + anio + '.';
-let hipo = 'Existe relación significativa entre ' + v1.toLowerCase() + ' y ' + v2.toLowerCase() + ' en ' + lugar + ', ' + anio + '.';
-document.getElementById('titulo').innerText = titulo;
-document.getElementById('objetivo').innerText = objetivo;
-document.getElementById('hipo').innerText = hipo;
-document.getElementById('vars').innerText = 'Variable 1: ' + v1 + ' | Variable 2: ' + v2 + ' | Enfoque: Cuantitativo | Tipo: ' + tipo + ' | Diseño: No experimental - Transversal';
-document.getElementById('res').style.display='block';
-window.scrollTo(0,document.body.scrollHeight);
-}
-</script>
 </body>
 </html>
